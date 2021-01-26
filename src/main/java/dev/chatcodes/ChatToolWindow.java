@@ -103,6 +103,11 @@ public class ChatToolWindow {
 
         String oAuthToken = PasswordSafe.getInstance().getPassword(credentialAttributes);
 
+        if (oAuthToken == null) {
+            addItalicized("Please set oAuth token in the settings pane before connecting");
+            return;
+        }
+
         OAuth2Credential credential = new OAuth2Credential(
             "twitch",
             oAuthToken

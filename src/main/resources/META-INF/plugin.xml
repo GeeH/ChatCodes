@@ -4,14 +4,15 @@
 
     <vendor email="ghockin@twilio.com" url="http://chatcod.es">ChatCodes</vendor>
 
-    <description><![CDATA[Unlease the power of mob programming by letting Twitch Chat interact directly with your IDE.]]></description>
+    <description>
+        <![CDATA[Unlease the power of mob programming by letting Twitch Chat interact directly with your IDE.]]></description>
 
     <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
          on how to target different products -->
 
-    <idea-version since-build="202"/>
-
     <depends>com.intellij.modules.lang</depends>
+
+    <idea-version since-build="203" />
 
     <extensions defaultExtensionNs="com.intellij">
 

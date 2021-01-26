@@ -5,10 +5,10 @@ plugins {
 }
 
 group 'dev.chatcodes'
-version '0.0.1'
+version '0.0.2'
 
 // make sure this is at most 1.8 to be compatible with IntelliJ's JRE
-sourceCompatibility = 1.8
+sourceCompatibility = 11
 
 repositories {
     mavenCentral()
@@ -30,8 +30,8 @@ dependencies {
 intellij {
     // Define IntelliJ Platform against which to build the plugin project.
     // Use the IntelliJ Platform BRANCH.BUILD version matching "targetIDE" (PhpStorm)
-    version '2020.2'   // baseIntelliJPlatformVersion
-    type 'IU'
+    version '2020.3'   // baseIntelliJPlatformVersion
+    type 'IC'
     downloadSources true
     // Require the targetIDE plugin or library
     // Use the stable version compatible with intellij.version and intellij.type specified above
